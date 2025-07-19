@@ -26,7 +26,7 @@ task CheckUnmappedReads {
   }
 
   command <<<
-  samtools view -c -f4 "~{bam_file}" > "~{sample_id}_unmapped_count.txt"
+    samtools view -c -f4 "~{bam_file}" > "~{sample_id}_unmapped_count.txt"
   >>>
 
   output {
