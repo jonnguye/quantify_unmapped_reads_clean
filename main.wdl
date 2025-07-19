@@ -30,7 +30,7 @@ task CheckUnmappedReads {
   >>>
 
   output {
-    file unmapped_count = "~{sample_id}_unmapped_count.txt"
+    File unmapped_count = "~{sample_id}_unmapped_count.txt"
   }
 
   runtime {
