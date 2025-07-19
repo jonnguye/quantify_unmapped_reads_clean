@@ -9,7 +9,7 @@ workflow DetectUnmappedReads{
   scatter (i in range(length(bam_files))) {
     call CheckUnmappedReads {
       input:
-        bam_files = bam_files[i],
+        bam_file = bam_files[i],
         sample_id = sample_ids[i]
     }
   }
